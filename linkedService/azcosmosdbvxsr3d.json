@@ -1,0 +1,23 @@
+{
+	"name": "azcosmosdbvxsr3d",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"connectionString": "AccountEndpoint=https://azcosmosdbvxsr3d.documents.azure.com:443/;Database=OperationalDB",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "azkeyvaultvxsr3d",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "azcosmosdbvxsr3d-Key"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

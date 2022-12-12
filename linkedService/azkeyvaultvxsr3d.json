@@ -1,0 +1,11 @@
+{
+	"name": "azkeyvaultvxsr3d",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://azkeyvaultvxsr3d.vault.azure.net/"
+		}
+	}
+}

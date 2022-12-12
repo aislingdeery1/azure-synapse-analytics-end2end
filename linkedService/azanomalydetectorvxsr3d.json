@@ -1,0 +1,28 @@
+{
+	"name": "azanomalydetectorvxsr3d",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "CognitiveService",
+		"typeProperties": {
+			"subscriptionId": "798e3660-52d8-404d-a9b2-446b348f4e80",
+			"resourceGroup": "rg-ahs-corp-analytics-demo",
+			"csName": "azanomalydetectorvxsr3d",
+			"csKind": "AnomalyDetector",
+			"csLocation": "canadacentral",
+			"endPoint": "https://azanomalydetectorvxsr3d.cognitiveservices.azure.com/",
+			"csKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "azkeyvaultvxsr3d",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "azanomalydetectorvxsr3d-Key"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
