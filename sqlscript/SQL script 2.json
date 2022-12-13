@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "\nCREATE USER [azpurviewvxsr3d] FROM EXTERNAL PROVIDER\nGO\n\nEXEC sp_addrolemember 'db_datareader', [azpurviewvxsr3d]\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "EnterpriseDW1",
+				"poolName": "EnterpriseDW1"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

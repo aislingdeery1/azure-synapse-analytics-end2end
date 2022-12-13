@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [DateID]\n,[Date]\n,[DateBKey]\n,[DayOfMonth]\n,[DaySuffix]\n,[DayName]\n,[DayOfWeek]\n,[DayOfWeekInMonth]\n,[DayOfWeekInYear]\n,[DayOfQuarter]\n,[DayOfYear]\n,[WeekOfMonth]\n,[WeekOfQuarter]\n,[WeekOfYear]\n,[Month]\n,[MonthName]\n,[MonthOfQuarter]\n,[Quarter]\n,[QuarterName]\n,[Year]\n,[YearName]\n,[MonthYear]\n,[MMYYYY]\n,[FirstDayOfMonth]\n,[LastDayOfMonth]\n,[FirstDayOfQuarter]\n,[LastDayOfQuarter]\n,[FirstDayOfYear]\n,[LastDayOfYear]\n,[IsHolidayUSA]\n,[IsWeekday]\n,[HolidayUSA]\n FROM [dbo].[Date]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "EnterpriseDW1",
+				"poolName": "EnterpriseDW1"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
